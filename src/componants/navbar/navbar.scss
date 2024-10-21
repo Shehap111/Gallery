@@ -1,0 +1,43 @@
+@import '../root.scss';
+
+.navbar{
+
+height: 100px;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+background-color: var(--background-color);
+color: var(--text-color);
+z-index: 999;
+box-shadow:  1px 1px 5px 1px #ffffff41;
+display: flex;
+align-items: center;
+justify-content: space-between;
+    .logo{
+        width: 100px;
+        height: 80px;
+        position: absolute;
+        left: calc(50% - 50px);
+    }
+    .form-check{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        input{
+                margin-left: 30px;
+                height: 20px;
+                width: 50px;
+        &:checked{
+            background-color: var(--background-color);
+        }
+            }
+
+        label{
+            font-size: 22px;
+            margin-left:  30px ;
+            font-weight: 800;
+            display: block;
+        }
+    }
+}

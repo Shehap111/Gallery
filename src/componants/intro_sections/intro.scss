@@ -1,0 +1,43 @@
+@import '../root.scss';
+
+.Intro-Sections{
+    height: 250px;
+    width: 100%;
+    background-image: url(../../images//intro_section.webp);
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: start;
+    position: relative;
+    align-items: center;
+    padding: 0 150px;
+
+}
+.Intro-Sections::after{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--af-background);
+}
+
+
+.Intro-Sections h1{
+    font-size: 52px;
+    color: var(--text-color);
+}
+.ind{
+    z-index: 11;
+}
+.Intro-Sections a{
+    color: #fff;
+    transition: all ease-in .2s;
+}
+.Intro-Sections span{
+    font-size: 24px;
+    color: #fff;
+}
